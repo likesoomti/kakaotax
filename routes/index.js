@@ -14,7 +14,7 @@ router.get('/keyboard', (req, res) => {
 });
 
 
-app.post('/message',function (req, res) {
+router.post('/message',function (req, res) {
 
   const _obj = {
       user_key: req.body.user_key,
@@ -22,7 +22,7 @@ app.post('/message',function (req, res) {
       content: req.body.content
   };
 
-  var test = "" = req.body.user_key + req.body.type + req.body.content;
+  var test = "" + req.body.user_key + req.body.type + req.body.content;
 
 
   //안녕이라고 입력되었다면...
