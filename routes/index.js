@@ -22,7 +22,7 @@ app.post('/message',function (req, res) {
       content: req.body.content
   };
 
-  console.log(_obj.content)
+  var test = "" = req.body.user_key + req.body.type + req.body.content;
 
 
   //안녕이라고 입력되었다면...
@@ -32,7 +32,7 @@ app.post('/message',function (req, res) {
     //'누구니' '메롱' 버튼 보여줌
     let massage = {
         "message": {
-            "text": '안녕'
+            "text": test
         },
         "keyboard": {
             "type": "buttons",
